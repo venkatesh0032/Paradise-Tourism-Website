@@ -1,0 +1,139 @@
+/* Container */
+/* Go to Booking button */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+.pay-now:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.go-booking-btn {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.go-booking-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.go-booking-btn:active {
+  transform: translateY(0);
+}
+
+.payment-container {
+  padding: 3rem;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #f0f0f0, #e0e0ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box */
+.payment-box {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+/* Headings */
+.payment-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.payment-box h3 {
+  margin: 1.5rem 0 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Info text */
+.payment-box p {
+  font-size: 1rem;
+  margin: 0.7rem 0;
+  color: #444;
+}
+
+/* Labels */
+.payment-box label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0.8rem 0 0.3rem;
+  color: #333;
+}
+
+/* Inputs & Selects */
+.payment-box input,
+.payment-box select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-box input:focus,
+.payment-box select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Payment Methods dropdown */
+.payment-methods {
+  margin-bottom: 1.5rem;
+}
+
+/* Pay button */
+.pay-now {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+  margin-top: 1rem;
+}
+
+.pay-now:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.pay-now:active {
+  transform: translateY(0);
+}

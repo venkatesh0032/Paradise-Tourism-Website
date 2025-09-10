@@ -1,0 +1,98 @@
+.gallery-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fefefe;
+  color: #222;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.gallery-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.gallery-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.gallery-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+.gallery-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-content p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.gallery-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallery-btn:hover {
+  background-color: #00695c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-section {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .gallery-image img {
+    max-width: 90%;
+  }
+}

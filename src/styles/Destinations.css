@@ -1,0 +1,44 @@
+/* Destinations.css */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.card {
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.card h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.modal {
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  background: rgb(185, 167, 167);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+.close {
+  float: right;
+  background: red;
+  color: rgb(87, 51, 51);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

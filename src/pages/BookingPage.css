@@ -1,0 +1,133 @@
+/* Booking Page Container */
+.booking-container {
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #f0f4f8);
+  min-height: 100vh;
+}
+
+/* Search Box */
+.search-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 20px auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-box:hover {
+  transform: translateY(-3px);
+}
+
+.search-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs & Selects */
+.search-box input,
+.search-box select {
+  margin: 10px;
+  padding: 12px 14px;
+  width: 220px;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+  border: 1px solid #0077ff;
+  box-shadow: 0 0 6px rgba(0, 119, 255, 0.3);
+}
+
+/* Room Info Layout */
+.room-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Results Section */
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 20px;
+  width: 320px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.card iframe {
+  margin-top: 12px;
+  border-radius: 10px;
+  width: 100%;
+  height: 180px;
+}
+
+/* Buttons */
+.card button {
+  margin-top: 12px;
+  padding: 12px 24px;
+  background: #0077ff;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.card button:hover {
+  background: #005fc1;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-box {
+    padding: 20px;
+  }
+
+  .search-box input,
+  .search-box select {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 95%;
+  }
+}
